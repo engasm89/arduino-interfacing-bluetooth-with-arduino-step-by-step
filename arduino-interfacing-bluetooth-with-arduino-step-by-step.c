@@ -6,6 +6,14 @@
  * Notes: Auto-generated metadata block (2025-11-18)
  */
 
+/*
+ * Course: Arduino Interfacing Bluetooth With Arduino Step By Step
+ * Platform: Arduino
+ * Author: Ashraf S A AlMadhoun
+ * Purpose: Auto-generated metadata block to document the learning goals.
+ * Notes: Auto-generated metadata block (2025-11-18)
+ */
+
 #include <stdio.h> // Serial
 #include <string.h> // Command parsing
 
