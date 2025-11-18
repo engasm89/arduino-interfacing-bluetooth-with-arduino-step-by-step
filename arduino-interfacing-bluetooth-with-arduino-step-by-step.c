@@ -1,3 +1,11 @@
+/*
+ * Course: Arduino Interfacing Bluetooth With Arduino Step By Step
+ * Platform: Arduino
+ * Author: Ashraf S A AlMadhoun
+ * Purpose: Auto-generated metadata block to document the learning goals.
+ * Notes: Auto-generated metadata block (2025-11-18)
+ */
+
 #include <stdio.h> // Serial
 #include <string.h> // Command parsing
 
@@ -55,6 +63,7 @@ void loop(void) { // Main loop
   delay(50); // Idle delay
 }
 
+// Main routine: orchestrates the arduino interfacing bluetooth with arduino step by step scenario
 int main(void) { // Entry
   setup(); // Init
   for (int i = 0; i < 10; ++i) { // Simulated cycles

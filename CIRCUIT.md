@@ -1,32 +1,16 @@
-# Arduino Bluetooth — Circuit Schematic
+# Arduino Interfacing Bluetooth With Arduino Step By Step — Circuit Notes
 
-- Course: Arduino: Interfacing Bluetooth with Arduino Step by Step
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/arduino-interfacing-bluetooth-with-arduino-step-by-step/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Arduino board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections (HC-05)
+## Wiring Checklist
 
-- `HC-05 VCC -> 5V`
-- `HC-05 GND -> GND`
-- `HC-05 TXD -> Arduino RX (D0)` or `D10` via SoftwareSerial
-- `HC-05 RXD -> Arduino TX (D1)` or `D11` via SoftwareSerial (use voltage divider)
-- LED: Onboard `D13`
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
- HC-05              Arduino UNO
-  VCC ---- 5V       D0 (RX) <--- TXD
-  GND ---- GND      D1 (TX) ---> RXD (via divider)
-                     D13 LED onboard
-```
-
-## Notes
-
-- Use a voltage divider on HC-05 `RXD` to avoid 5V direct drive.
-- Alternatively use SoftwareSerial on 3.3V-tolerant pins.
-
-## Purchase With Discount
-
-Get the full Bluetooth guide with a discounted price — enroll via the link above.
-
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
